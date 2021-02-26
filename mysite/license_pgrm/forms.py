@@ -5,25 +5,6 @@ from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
 
 
-class UserProfileForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput())
-
-    class Meta:
-        model = UserProfile
-        fields = ["role", "name", "orgid", "email"]
-
-
-class myForm(UserCreationForm):
-    role = forms.CharField()
-    domain = forms.CharField()
-    orgid = forms.CharField()
-
-    class Meta:
-        model = User
-        fields = ["username", "password1", "password2",
-                  ]
-
-
 class LicenseForm(forms.ModelForm):
     class Meta:
         model = License
