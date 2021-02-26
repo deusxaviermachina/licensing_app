@@ -1,0 +1,7 @@
+{% extends 'license_pgrm/index.html' %}
+{% block content %}
+    <h1>Welcome, {{ user.username }}</h1>
+    <a href ="{% url 'create_license' %}">Create License</a><br>
+    <a href="{% url 'register_url' %}">Register New User</a><br>
+    <a href="{% url 'logout' %}">Log Out</a>
+{% endblock %}

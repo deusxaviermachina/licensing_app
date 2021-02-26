@@ -1,0 +1,11 @@
+{% extends 'license_pgrm/index.html' %}
+{% block content %}
+
+<h1>Profile
+    Created Successfully</h1>
+<h2>Details:</h2>
+<h3>Username: {{ username }}</h3>
+<h4>Organization: {{ orgid }}</h4>
+<a href="{% url 'dashboard' %}"> Return to dashboard</a>
+
+{% endblock %}

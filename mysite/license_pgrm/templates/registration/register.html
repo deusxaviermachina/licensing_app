@@ -1,0 +1,15 @@
+{% extends 'license_pgrm/index.html' %}
+{% block content %}
+
+<h1>Create User Profile</h1>
+
+<form method="post">
+  {% csrf_token %}
+  {{ form1.as_p }}
+  {{ form2.as_p }}
+  <button type="submit">Save changes</button>
+</form>
+
+{% endblock %}
+
+
